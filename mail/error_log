@@ -1,0 +1,2 @@
+[18-Jul-2022 14:01:46 UTC] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/juliebea/public_html/mail/php-mailer/PHPMailerAutoload.php on line 45
+[18-Jul-2022 14:01:46 UTC] PHP Fatal error:  __autoload() is no longer supported, use spl_autoload_register() instead in /home/juliebea/public_html/mail/php-mailer/PHPMailerAutoload.php on line 45

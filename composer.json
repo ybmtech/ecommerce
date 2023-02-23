@@ -1,0 +1,12 @@
+{
+    "require": {
+        "spatie/url-signer": "^1.2",
+        "nesbot/carbon": "^2.59",
+        "vlucas/phpdotenv": "^5.4"
+    },
+     "autoload": {
+      "psr-4": {
+          "App\\":"app/"
+      }
+    }
+}
