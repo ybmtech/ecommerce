@@ -122,8 +122,7 @@ $products=$dbquery->multiple_row_without_parameter_join('products','product_cate
         <div class="priceTableWrapper">
         <div class="priceImage">
         <img data-src="<?=$product['image'];?>" src="<?=$product['image'];?>" alt="<?=$product['sname']." image";?>" class="img-responsive lazyestload">
-         <div class="maskImage">
-      </div>
+       
             </div>
             <div class="priceInfo">
 

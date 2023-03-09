@@ -1,5 +1,4 @@
 <header id="pageTop" class="header">
-
 <!-- TOP INFO BAR -->
 <div class="top-info-bar">
   <div class="container">
@@ -26,28 +25,26 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item <?=(getUri()=="/" || getUri()=="index.php" || getUri()=="") ? "active" : "";?>">
           <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
         </li>
 
       
-        <li class="nav-item">
-          <a class="nav-link" href="shop">Shop</a>
+        <li class="nav-item <?=(getUri()=="shop") ? "active" : "";?>">
+          <a class="nav-link " href="shop">Shop</a>
         </li>
 
-        <li class="nav-item">
+        <li class="nav-item <?=(getUri()=="contact") ? "active" : "";?>">
           <a class="nav-link" href="contact">Contact Us</a>
         </li>
 
-        <li class="nav-item">
+        <li class="nav-item <?=(getUri()=="about") ? "active" : "";?>">
           <a class="nav-link" href="about">About Us</a>
         </li>
 
-       
-
               <?php
         if(!isset($_SESSION['customer_id'])){ ?>
- <li class="nav-item">
+ <li class="nav-item <?=(getUri()=="login") ? "active" : "";?>">
           <a class="nav-link" href="login">Login</a>
         </li>
         <?php }

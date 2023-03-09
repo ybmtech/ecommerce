@@ -25,4 +25,10 @@ $dotenv->load();
     $sms=new Sms();
     $payment=new PayGateway();
 $default_currency_symbol=$dbquery->row_with_one_parameter('default_currency','status',1);
+
+function getUri(){
+    $uri= $_SERVER['REQUEST_URI'];
+    $explode_uri=explode('/',$uri);
+   return  $explode_uri[1];
+     }
 ?>
