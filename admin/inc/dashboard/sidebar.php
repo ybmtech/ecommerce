@@ -1,5 +1,5 @@
 <?php
-function getUri(){
+function getAdminUri(){
         $uri= substr($_SERVER['REQUEST_URI'],7);
         $explode_uri=explode('?',$uri);
        return  $explode_uri[0];
@@ -17,43 +17,43 @@ function getUri(){
                             <li class="nav-divider">
                             </li>
                             <li class="nav-item">
-                     <a class="nav-link <?=(getUri()=="dashboard") ? "active" : "";?>" href="dashboard"><i class="fas fa-th-large"></i>Dashboard</a>
+                     <a class="nav-link <?=(getAdminUri()=="dashboard") ? "active" : "";?>" href="dashboard"><i class="fas fa-th-large"></i>Dashboard</a>
                              </li>
                         
                             <li class="nav-item">
-                     <a class="nav-link <?=(getUri()=="product-category") ? "active" : "";?>" href="product-category"><i class="fas fa-columns"></i>Product Category</a>
+                     <a class="nav-link <?=(getAdminUri()=="product-category") ? "active" : "";?>" href="product-category"><i class="fas fa-columns"></i>Product Category</a>
                              </li>
                              
                              <li class="nav-item">
-                     <a class="nav-link <?=(getUri()=="product") ? "active" : "";?>" href="product"><i class="fas fa-boxes"></i>Product</a>
+                     <a class="nav-link <?=(getAdminUri()=="product") ? "active" : "";?>" href="product"><i class="fas fa-boxes"></i>Product</a>
                              </li>
                             
                              <li class="nav-item">
-                     <a class="nav-link <?=(getUri()=="coupon") ? "active" : "";?>" href="coupon"><i class="fab fa-modx"></i>Coupon</a>
+                     <a class="nav-link <?=(getAdminUri()=="coupon") ? "active" : "";?>" href="coupon"><i class="fab fa-modx"></i>Coupon</a>
                              </li>
                            
                              <li class="nav-item">
-                     <a class="nav-link <?=(getUri()=="user") ? "active" : "";?>" href="user"><i class="fas fa-user-plus"></i>User</a>
+                     <a class="nav-link <?=(getAdminUri()=="user") ? "active" : "";?>" href="user"><i class="fas fa-user-plus"></i>User</a>
                              </li>
                            
 
                            
 
                              <li class="nav-item">
-                     <a class="nav-link <?=(getUri()=="delivery-location") ? "active" : "";?>" href="delivery-location"><i class="fas fa-map"></i>Delivery Location</a>
+                     <a class="nav-link <?=(getAdminUri()=="delivery-location") ? "active" : "";?>" href="delivery-location"><i class="fas fa-map"></i>Delivery Location</a>
                              </li>
 
                             <li class="nav-item">
-                     <a class="nav-link <?=(getUri()=="orders") ? "active" : "";?>" href="orders"><i class="fas fa-dolly"></i>Orders</a>
+                     <a class="nav-link <?=(getAdminUri()=="orders") ? "active" : "";?>" href="orders"><i class="fas fa-dolly"></i>Orders</a>
                              </li>
                           
                              <li class="nav-item">
-                     <a class="nav-link <?=(getUri()=="payment-history") ? "active" : "";?>" href="payment-history"><i class="fas fa-history"></i>Payments</a>
+                     <a class="nav-link <?=(getAdminUri()=="payment-history") ? "active" : "";?>" href="payment-history"><i class="fas fa-history"></i>Payments</a>
                              </li>
                              
                              
                              <li class="nav-item">
-                     <a class="nav-link <?=(getUri()=="change-password") ? "active" : "";?>" href="change-password"><i class="fas fa-user-circle"></i>Change Password</a>
+                     <a class="nav-link <?=(getAdminUri()=="change-password") ? "active" : "";?>" href="change-password"><i class="fas fa-user-circle"></i>Change Password</a>
                              </li>
                             <li class="nav-item">
                      <a class="nav-link" href="logout"><i class="fas fa-power-off mr-2"></i>Logout</a>
