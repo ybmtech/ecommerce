@@ -31,4 +31,10 @@ function getUri(){
     $explode_uri=explode('/',$uri);
    return  $explode_uri[1];
      }
+
+     function getAdminUri(){
+        $uri= substr($_SERVER['REQUEST_URI'],7);
+        $explode_uri=explode('?',$uri);
+       return  $explode_uri[0];
+         }
 ?>

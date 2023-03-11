@@ -1,10 +1,3 @@
-<?php
-function getAdminUri(){
-        $uri= substr($_SERVER['REQUEST_URI'],7);
-        $explode_uri=explode('?',$uri);
-       return  $explode_uri[0];
-         }
-?>
 <div class="nav-left-sidebar sidebar-light" style="overflow-y: scroll; height:90%!important;background-color: #000080;">
             <div class="menu-list">
                 <nav class="navbar navbar-expand-lg navbar-light">
